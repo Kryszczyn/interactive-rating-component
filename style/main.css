@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Overpass", sans-serif;
+}
+
+body {
+  background-color: #000;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .rating__component-container {
+  min-width: 500px;
+  width: 500px;
+  min-height: 400px;
+  background-color: #121417;
+  padding: 2rem 3rem;
+  border-radius: 2rem;
+}
+
+.container .rating__component-container .rating__component-top {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 1rem;
+}
+
+.container .rating__component-container .rating__component-top .star__container {
+  width: 50px;
+  height: 50px;
+  background-color: #252d37;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .rating__component-container .rating__component-info {
+  width: 100%;
+}
+
+.container .rating__component-container .rating__component-info .title {
+  font-size: 2.25rem;
+  color: white;
+}
+
+.container .rating__component-container .rating__component-info .description {
+  font-size: 1.15rem;
+  color: #959eac;
+  line-height: 1.75rem;
+  margin: 1rem 0;
+}
+
+.container .rating__component-container .rating__component-rate {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 2rem 0;
+}
+
+.container .rating__component-container .rating__component-rate .rate__item {
+  width: 50px;
+  height: 50px;
+  background-color: #252d37;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+
+.container .rating__component-container .rating__component-rate .rate__item:hover {
+  background-color: #959eac;
+}
+
+.container .rating__component-container .rating__component-rate .rate__item:hover .rate__item-text {
+  color: white;
+}
+
+.container .rating__component-container .rating__component-rate .rate__item .rate__item-text {
+  color: #959eac;
+}
+
+.container .rating__component-container .rating__component-rate .rate__item .rate__checkbox {
+  display: none;
+}
+
+.container .rating__component-container .rating__component-rate .selected {
+  background-color: #fb7413;
+}
+
+.container .rating__component-container .rating__component-rate .selected .rate__item-text {
+  color: white;
+}
+
+.container .rating__component-container .rating__conpomonent-submit {
+  width: 100%;
+}
+
+.container .rating__component-container .rating__conpomonent-submit button {
+  width: 100%;
+  height: 50px;
+  background-color: #fb7413;
+  border-radius: 2rem;
+  border: none;
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.container .rating__component-container .rating__conpomonent-submit button:hover {
+  background-color: white;
+  color: #fb7413;
+}
+
+.container .thanks__component-container {
+  display: none;
+  min-width: 500px;
+  width: 500px;
+  min-height: 400px;
+  background-color: #121417;
+  padding: 2rem 3rem;
+  border-radius: 2rem;
+}
+
+.container .thanks__component-container .thanks__component-image {
+  width: 100%;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.container .thanks__component-container .thanks__component-selected-text {
+  width: 100%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 2rem 0;
+}
+
+.container .thanks__component-container .thanks__component-selected-text .selected-text__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #252d37;
+  padding: .5rem 1rem;
+  border-radius: 2rem;
+}
+
+.container .thanks__component-container .thanks__component-selected-text .selected-text__container .selected-text__item {
+  color: #fb7413;
+}
+
+.container .thanks__component-container .thanks__component-info {
+  width: 100%;
+}
+
+.container .thanks__component-container .thanks__component-info .title {
+  text-align: center;
+  font-size: 2.75rem;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.container .thanks__component-container .thanks__component-info .description {
+  text-align: center;
+  font-size: 1.12rem;
+  color: #959eac;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 11px;
+  text-align: center;
+  color: white;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=main.css.map */

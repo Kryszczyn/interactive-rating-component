@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Interactive rating component</title>
+  <link rel="stylesheet" href="./style/main.css">
+</head>
+<body>
+  <main>
+    <div class="container">
+      <div class="rating__component-container">
+        <div class="rating__component-top">
+          <div class="star__container">
+            <img src="./images/icon-star.svg" alt="star-icon">
+          </div>
+        </div>
+        <div class="rating__component-info">
+          <p class="title">How did we do?</p>
+          <p class="description">
+            Please let us know how we did with your support request. All feedback is appreciated 
+            to help us improve our offering!
+          </p>
+        </div>
+        <div class="rating__component-rate">
+          <div class="rate__item" data-rate="1">
+            <p class="rate__item-text">1</p>
+            <input type="radio" class="rate__checkbox">
+          </div>
+          <div class="rate__item" data-rate="2">
+            <p class="rate__item-text">2</p>
+            <input type="radio" class="rate__checkbox">
+          </div>
+          <div class="rate__item" data-rate="3">
+            <p class="rate__item-text">3</p>
+            <input type="radio" class="rate__checkbox">
+          </div>
+          <div class="rate__item" data-rate="4">
+            <p class="rate__item-text">4</p>
+            <input type="radio" class="rate__checkbox">
+          </div>
+          <div class="rate__item" data-rate="5">
+            <p class="rate__item-text">5</p>
+            <input type="radio" class="rate__checkbox">
+          </div>
+        </div>
+        <div class="rating__conpomonent-submit">
+          <button>Submit</button>
+        </div>
+      </div>
+      <div class="thanks__component-container">
+        <div class="thanks__component-image">
+          <img src="./images/illustration-thank-you.svg" alt="thanks-image" />
+        </div>
+        <div class="thanks__component-selected-text">
+          <div class="selected-text__container">
+            <p class="selected-text__item"></p>
+          </div>
+        </div>
+        <div class="thanks__component-info">
+          <p class="title">Thank you!</p>
+          <p class="description">
+            We appreciate you taking the time to give a rating. If you ever need more support, 
+            don’t hesitate to get in touch!
+          </p>
+        </div>
+      </div>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://github.com/Kryszczyn" target="_blank">Kryszczyn</a>.
+      </div>
+    </div>
+  </main>
+
+  <script src="./style/main.js"></script>
+</body>
+</html>
